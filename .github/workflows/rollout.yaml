@@ -8,7 +8,7 @@ jobs:
   rollout:
     runs-on: ubuntu-latest
     env:
-      CLUSTER_NAME: django-k8s
+      CLUSTER_NAME: django-k8s-1-22-11-do-0-nyc1-1657893907993
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
