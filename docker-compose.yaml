@@ -28,20 +28,20 @@ services:
       - "5434:5434"
     volumes:
       - postgres_data:/var/lib/postgresql/data/
-#  redis_db:
-#    image: redis
-#    restart: always
-#    expose:
-#      - 6388
-#    ports:
-#      - "6388:6388"
-#    volumes:
-#        - redis_data:/data
-#    entrypoint: redis-server --appendonly yes --port 6388
+  redis_db:
+    image: redis
+    restart: always
+    expose:
+      - 6388
+    ports:
+      - "6388:6388"
+    volumes:
+        - redis_data:/data
+    entrypoint: redis-server --appendonly yes --port 6388
 
 
 volumes:
 #  staticfiles:
 #    external: true
   postgres_data:
-#  redis_data:
+  redis_data:
